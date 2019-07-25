@@ -9,9 +9,11 @@
   <h2 class="text-center">
     <%= link_to course.title, course_path(course) %>
   </h2>
+  <div class= "col-8 offset-2">
   <% if course.image.url != nil %>
     <%= image_tag course.image.url %>
   <% end %>
+  </div>
   <br />
   <div class="row">
     <div class="col-sm-8 col-12">
