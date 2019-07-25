@@ -2,10 +2,12 @@
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center"><%= current_course.title %></h1>
   
-  <% if current_course.image.url != nil %>
-  <%= image_tag current_course.image.url %>
-  <% end %>
-  
+  <div class= "col-8 offset-2">
+    <% if current_course.image.url != nil %>
+    <%= image_tag current_course.image.url, class: 'img-fluid' %>
+    <% end %>
+  </div>
+
   <br />
   <%= link_to 'Edit Course Details', edit_instructor_course_path(current_course), class: 'btn btn-warning' %>
   <%= link_to 'Preview As Student...', course_path(current_course), class: 'btn btn-warning float-right' %>
@@ -19,13 +21,15 @@
     <% current_course.sections.each do |section| %>
       <li>
         <%= section.title %>
-        <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'float-right btn btn-primary btn-sm' %>
+        <%= link_to 'Add Lesson to Section', new_instructor_section_lesson_path(section), class: 'float-right btn btn-primary btn-sm' %>
+        
         <ul>
             <% section.lessons.each do |lesson| %>
               <li>
                 <b><%= lesson.title %></b>
                 -
                 <%= lesson.subtitle %>
+                
               </li>
             <% end %>
         </ul>
