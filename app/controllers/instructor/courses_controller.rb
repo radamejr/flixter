@@ -1,6 +1,6 @@
 class Instructor::CoursesController < ApplicationController
   before_action :authenticate_user!
-  before_action :require_authorized_for_current_course, only: [:show]
+  before_action :require_authorized_for_current_course, only: [:show, :update, :edit]
 
   def new
     @course = Course.new
@@ -21,6 +21,28 @@ class Instructor::CoursesController < ApplicationController
     
   end
   
+  def edit
+
+  end
+
+  def update
+    @course = Course.find(params[:id])
+
+    if @course.user != current_user
+      return render plain: 'Not Allowed', status: :forbidden
+    end
+
+    @course.update_attributes(course_params)
+    
+    if @course.valid?
+      redirect_to instructor_course_path(@course)
+    else
+      render :edit, status: :unprocessable_entity
+    end
+  
+  end
+
+
   private
 
   def require_authorized_for_current_course
