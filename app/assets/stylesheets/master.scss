@@ -93,23 +93,49 @@ body {
 
 .lesson {
   background-color: black;
-  margin-top: 10px;
-  height: 130px;
+  color: white;
+  margin: 10px;
+  padding-bottom: 25px;
 }
 
-.lesson a {
+.lessons {
+  margin-top: 10px;
+}
+
+.lessons a {
   color: white;
   font-family: "Helvetica Neue", Helvetica ;
   font-weight: 100;
   font-size: 15px;
 }
 
-.lesson a b {
+.lessons a b {
   font-weight: 100;
   font-size: 25px;
 }
 
-.section {
+
+.lessons li {
+  background-color: black;
+  color: white;
+  margin: 10px;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  padding: 8px;
+  font-size: 15px;
+
+}
+
+.lessons li b {
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.lessons li p {
+  margin: 0;
+}
+
+.sections {
   border: 1px solid;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4
   20px;
@@ -124,3 +150,21 @@ body {
   background-color: green;
 }
 
+ul {
+  list-style-type: none;
+}
+
+ul .header {
+  font-size: 25px;
+}
+
+ul .header .fa {
+  font-size: 20px;
+}
+
+.section-li {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 20px;
+  margin: 20px;
+}
