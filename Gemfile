@@ -70,6 +70,10 @@ gem "fog-aws"
 gem "mini_magick"
 gem 'stripe'
 
+gem 'ranked-model'
+gem 'jquery-ui-rails'
+
+
 gem 'carrierwave', '>= 2.0.0.rc', '< 3.0'
 gem 'carrierwave-aws'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
