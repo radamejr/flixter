@@ -4,7 +4,7 @@ Flixter is an example of a video-hosting web application. Another user driven we
 
 ## Getting Started
 
-You can visit this application in the wild by clicking [here]. (https://flixter-robert-adame.herokuapp.com/)
+You can visit this application in the wild by clicking [here.](https://flixter-robert-adame.herokuapp.com/)
 In order to participate you will have create an account. Don't worry this is easy just hit "sign up" in the navigation bar.
 
 Some of the content listed has pricing set for it. After all courses are not always free! In this case don't use your own credit card information instead use this demo number to test it out and get signed up:
