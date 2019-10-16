@@ -19,7 +19,7 @@ Card number: 4242-4242-4242-4242
 Card Expiration: Anything in the future!
 Card CVC: Any 3-digit number!
 
-![enroll](https://github.com/radamejr/flixter/blob/master/app/assets/images/pay2.png)
+![enroll](https://github.com/radamejr/flixter/blob/master/app/assets/images/paying.png)
 
 Once successfully enrolled you can view the lessons!
 
